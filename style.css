@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ffafbd, #ffc3a0, #ffd3b6, #ffecd2, #fff6e5, #ffecd2, #ffd3b6, #ffc3a0, #ffafbd); /* Gradient background */
+    animation: gradientAnimation 10s infinite alternate; /* Smooth animation */
+  }
+  
+  @keyframes gradientAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+  }
+  
+  .birthday-card {
+    width: 300px;
+    height: 200px;
+    background-color: pink; /* Or any color you prefer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 15px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  }
+  
+  .message {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  }
+  
+  .birthday-card:before {
+    content: "\2665"; /* Unicode for heart symbol */
+    font-size: 36px;
+    position: absolute;
+    top: 10px;
+    color: #ff7eb3; /* Heart color */
+  }
+  
